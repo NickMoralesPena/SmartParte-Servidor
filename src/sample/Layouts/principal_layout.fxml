@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.effect.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: Transparent;" stylesheets="@../estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controladores.ControladorPrincipal">
+   <children>
+      <Pane prefHeight="30.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="30.0">
+               <children>
+                  <JFXButton fx:id="bEExcel" alignment="CENTER" contentDisplay="CENTER" ripplerFill="#82cef2" style="-fx-background-radius: 100px; -fx-background-color: green;" text="Exporta a Excel" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="bATabla" alignment="CENTER" contentDisplay="CENTER" ripplerFill="BLUE" style="-fx-background-radius: 100px;" text="Actualizar Tabla">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="bCSesion" alignment="CENTER" contentDisplay="CENTER" ripplerFill="#f5f5f5" style="-fx-background-color: red; -fx-background-radius: 100px;" text="Cerrar Sesión" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="-0.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Calibri Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow color="#59c034" height="109.99" radius="27.049999999999997" spread="0.5" width="0.21" />
+         </effect>
+      </Pane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="600.0" prefWidth="600.0" StackPane.alignment="CENTER">
+               <StackPane.margin>
+                  <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+               </StackPane.margin>
+               <children>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: black;">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="93.0" fitWidth="80.0">
+                           <image>
+                              <Image url="@../Resources/icono.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="-50.0" top="5.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <TableView fx:id="tablaDatos" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="584.0" VBox.vgrow="ALWAYS">
+                           <columns>
+                              <TableColumn fx:id="columIdParte" prefWidth="143.0" text="Identificacion" />
+                              <TableColumn fx:id="columFecha" prefWidth="152.0" text="Fecha" />
+                              <TableColumn fx:id="columDNICliente" prefWidth="212.0" text="DNI del Cliente" />
+                              <TableColumn fx:id="columEstado" prefWidth="92.0" text="Estado" />
+                           </columns>
+                           <VBox.margin>
+                              <Insets bottom="45.0" left="45.0" right="45.0" top="60.0" />
+                           </VBox.margin>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </StackPane>
+      <Pane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton fx:id="nombreUs" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="200.0" snapToPixel="false" text="Nombre de Usuario" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: transparent;" stylesheets="@../estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controladores.ControladorLogin">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <StackPane.margin>
+                  <Insets bottom="45.0" left="45.0" right="45.0" top="45.0" />
+               </StackPane.margin>
+               <children>
+                  <ImageView fitHeight="164.0" fitWidth="123.0">
+                     <image>
+                        <Image url="@../Resources/icono.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="-45.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: black;" VBox.vgrow="ALWAYS">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Inicio de Sesión">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white;">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="50.0" />
+                           </VBox.margin>
+                           <children>
+                              <TextField fx:id="IDNI" promptText="Nombre de usuario" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                              <ImageView fitHeight="15.0" fitWidth="15.0">
+                                 <image>
+                                    <Image url="@../Resources/user_13230.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-color: white;">
+                           <children>
+                              <PasswordField fx:id="IPass" promptText="Introduzca Contraseña" style="-fx-background-color: transparent;" HBox.hgrow="ALWAYS" />
+                              <ImageView fitHeight="17.0" fitWidth="30.0">
+                                 <image>
+                                    <Image url="@../Resources/pass.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="-2.0" top="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <JFXButton fx:id="IBInicio" prefHeight="25.0" prefWidth="170.0" style="-fx-background-radius: 100px; -fx-background-color: #E74B25;" text="Iniciar Sesión" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <HBox alignment="BOTTOM_CENTER" VBox.vgrow="ALWAYS">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="App de Servidor">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

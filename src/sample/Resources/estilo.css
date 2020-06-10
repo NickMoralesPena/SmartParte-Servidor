@@ -1,0 +1,9 @@
+FontAwesomeIcon {
+    -fx-cursor: hand;
+}
+
+.root{
+    -fx-background-image:url('resources/fondo.jpg');
+    -fx-background-size: cover;
+    }
+

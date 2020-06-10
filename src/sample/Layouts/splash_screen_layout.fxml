@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="559.0" prefWidth="600.0" style="-fx-background-image: url(&quot;background_image.jpg&quot;);;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controladores.ControladorSplashScreen">
+   <children>
+      <ImageView id="imagen_splash_screen" fx:id="imagen_splash_screen" fitHeight="559.0" fitWidth="600.0">
+         <image>
+            <Image url="@../Resources/SplashScreen.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
